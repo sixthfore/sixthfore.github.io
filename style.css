@@ -37,6 +37,8 @@ td {
   font-size: 10pt;
   text-align: left;
   padding: 10px;
+  height: 600px;
+  overflow: auto;
 }
 
 #pro_threads {
