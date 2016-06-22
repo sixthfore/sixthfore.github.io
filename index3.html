@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sixthfore</title>
+    <meta charset="utf-8">
+
+    <style>
+      table {
+        border-collapse: collapse;
+        border: 2px black solid;
+        font: 12px sans-serif;
+      }
+      td {
+        border: 1px black solid;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">crop_name</th>
+<th title="Field #2">soil_effect_overall</th>
+<th title="Field #3">soil_effect_speed</th>
+<th title="Field #4">soil_effect_quality</th>
+<th title="Field #5">soil_effect_number</th>
+<th title="Field #6">soil_effect_size</th>
+<th title="Field #7">shop_unlock</th>
+<th title="Field #8">source</th>
+<th title="Field #9">shop</th>
+<th title="Field #10">season_good</th>
+<th title="Field #11">season_poor</th>
+<th title="Field #12">grow_time</th>
+<th title="Field #13">harvested</th>
+<th title="Field #14">regrows</th>
+<th title="Field #15">seed_buy</th>
+<th title="Field #16">seed_sell</th>
+<th title="Field #17">crop_buy</th>
+<th title="Field #18">crop_sell_lvl1</th>
+<th title="Field #19">crop_sell_lvl10</th>
+<th title="Field #20">yield_one_sell</th>
+<th title="Field #21">profit_one_harvest</th>
+<th title="Field #22">yield_per_day</th>
+<th title="Field #23">lvl_at_shop</th>
+<th title="Field #24">lvl_inventory_seed</th>
+<th title="Field #25">lvl_inventory_crop</th>
+</tr></thead>
+<tbody><tr><td>Grape</td>
+<td>2.81</td>
+<td>0.43</td>
+<td>0.43</td>
+<td>0.43</td>
+<td>0.43</td>
+<td>69. Eliza: Harvest 50 Grapes!</td>
+<td> </td>
+<td>tree</td>
+<td>-</td>
+<td>Winter</td>
+<td align="right">50</td>
+<td>1-9</td>
+<td>Yes</td>
+<td align="right">6000</td>
+<td align="right">600</td>
+<td>650</td>
+<td>120</td>
+<td> </td>
+<td align="right">480</td>
+<td align="right">-5520</td>
+<td align="right">10</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Apple</td>
+<td>3.13</td>
+<td>0.50</td>
+<td>0.50</td>
+<td>0.50</td>
+<td>0.50</td>
+<td>70. Eliza: Harvest 50 Apples!</td>
+<td>map</td>
+<td>tree</td>
+<td>-</td>
+<td>Winter</td>
+<td align="right">62</td>
+<td>1-9</td>
+<td>Yes</td>
+<td align="right">7000</td>
+<td align="right">700</td>
+<td>850</td>
+<td>150</td>
+<td> </td>
+<td align="right">600</td>
+<td align="right">-6400</td>
+<td align="right">10</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Orange</td>
+<td>2.50</td>
+<td>0.31</td>
+<td>0.31</td>
+<td>0.31</td>
+<td>0.31</td>
+<td>66. Eliza: Harvest 20 Oranges!</td>
+<td> </td>
+<td>tree</td>
+<td>-</td>
+<td>Winter</td>
+<td align="right">22</td>
+<td>1-9</td>
+<td>Yes</td>
+<td align="right">5000</td>
+<td align="right">500</td>
+<td>500</td>
+<td>80</td>
+<td> </td>
+<td align="right">320</td>
+<td align="right">-4680</td>
+<td align="right">15</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Fodder</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Default</td>
+<td> </td>
+<td>vegetable</td>
+<td>-</td>
+<td>-</td>
+<td align="right">4</td>
+<td>1</td>
+<td>Yes</td>
+<td align="right">30</td>
+<td align="right">3</td>
+<td>240</td>
+<td>60</td>
+<td> </td>
+<td align="right">60</td>
+<td align="right">30</td>
+<td align="right">15</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Turnip</td>
+<td>0.50</td>
+<td>-</td>
+<td>0.03</td>
+<td>-</td>
+<td>-</td>
+<td>Default</td>
+<td> </td>
+<td>vegetable</td>
+<td>Summer, Fall</td>
+<td>-</td>
+<td align="right">3</td>
+<td>2</td>
+<td>-</td>
+<td align="right">20</td>
+<td align="right">2</td>
+<td>200</td>
+<td>30</td>
+<td> </td>
+<td align="right">60</td>
+<td align="right">40</td>
+<td align="right">20</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Pumpkin</td>
+<td>1.00</td>
+<td>-</td>
+<td>0.03</td>
+<td>-</td>
+<td>0.25</td>
+<td>30. Eliza: Ship a level 5 veggie!  </td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring, Summer</td>
+<td>Winter</td>
+<td align="right">7</td>
+<td>3</td>
+<td>Yes</td>
+<td align="right">200</td>
+<td align="right">20</td>
+<td>420</td>
+<td>65</td>
+<td> </td>
+<td align="right">195</td>
+<td align="right">-5</td>
+<td align="right">28</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Toyherb</td>
+<td>0.25</td>
+<td>-</td>
+<td>0.25</td>
+<td>-</td>
+<td>-</td>
+<td>Default</td>
+<td> </td>
+<td>flower</td>
+<td>Spring</td>
+<td>Winter</td>
+<td align="right">4</td>
+<td>2</td>
+<td>-</td>
+<td align="right">60</td>
+<td align="right">6</td>
+<td>250</td>
+<td>65</td>
+<td> </td>
+<td align="right">130</td>
+<td align="right">70</td>
+<td align="right">33</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Potato</td>
+<td>1.00</td>
+<td>-</td>
+<td>0.03</td>
+<td>0.25</td>
+<td>-</td>
+<td>4. Eliza: Make a Shipment!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring, Summer</td>
+<td>Winter</td>
+<td align="right">7</td>
+<td>3</td>
+<td>-</td>
+<td align="right">80</td>
+<td align="right">8</td>
+<td>600</td>
+<td>90</td>
+<td> </td>
+<td align="right">270</td>
+<td align="right">190</td>
+<td align="right">39</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Shield</td>
+<td>1.00</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>61. Eliza: Harvest Shield Flower!</td>
+<td> </td>
+<td>flower - special</td>
+<td>-</td>
+<td>-</td>
+<td align="right">12</td>
+<td>1</td>
+<td>-</td>
+<td align="right">1500</td>
+<td align="right">150</td>
+<td>-</td>
+<td>2000</td>
+<td> </td>
+<td align="right">500</td>
+<td align="right"></td>
+<td align="right">42</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Sword</td>
+<td>1.00</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>60. Eliza: Harvest Sword Flower!</td>
+<td> </td>
+<td>flower - special</td>
+<td>-</td>
+<td>-</td>
+<td align="right">12</td>
+<td>1</td>
+<td>-</td>
+<td align="right">1500</td>
+<td align="right">150</td>
+<td>-</td>
+<td>2000</td>
+<td> </td>
+<td align="right">500</td>
+<td align="right"></td>
+<td align="right">42</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Strawberry</td>
+<td>0.50</td>
+<td>0.25</td>
+<td>0.25</td>
+<td>0.25</td>
+<td>0.25</td>
+<td>27. Eliza: Harvest 6 (types of) veggies!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring,Fall</td>
+<td>-</td>
+<td align="right">16</td>
+<td>6</td>
+<td>Yes</td>
+<td align="right">400</td>
+<td align="right">40</td>
+<td>800</td>
+<td>135</td>
+<td> </td>
+<td align="right">810</td>
+<td align="right">410</td>
+<td align="right">51</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Pink Cat</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>0.25</td>
+<td>9. Eliza: Harvest Toyherb!</td>
+<td> </td>
+<td>flower</td>
+<td>Summer</td>
+<td>Winter</td>
+<td align="right">6</td>
+<td>3</td>
+<td>-</td>
+<td align="right">180</td>
+<td align="right">18</td>
+<td>450</td>
+<td>110</td>
+<td> </td>
+<td align="right">330</td>
+<td align="right">150</td>
+<td align="right">55</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Spinach</td>
+<td>0.03</td>
+<td>0.25</td>
+<td>0.03</td>
+<td>-</td>
+<td>-</td>
+<td>4. Eliza: Make a Shipment!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Fall</td>
+<td>-</td>
+<td align="right">2</td>
+<td>2</td>
+<td>-</td>
+<td align="right">60</td>
+<td align="right">6</td>
+<td>300</td>
+<td>65</td>
+<td> </td>
+<td align="right">130</td>
+<td align="right">70</td>
+<td align="right">65</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Moondrop</td>
+<td>0.75</td>
+<td>0.25</td>
+<td>0.03</td>
+<td>-</td>
+<td>-</td>
+<td>9. Eliza: Harvest Toyherb!</td>
+<td> </td>
+<td>flower</td>
+<td>Spring, Fall</td>
+<td>Winter</td>
+<td align="right">7</td>
+<td>4</td>
+<td>-</td>
+<td align="right">250</td>
+<td align="right">25</td>
+<td>400</td>
+<td>115</td>
+<td> </td>
+<td align="right">460</td>
+<td align="right">210</td>
+<td align="right">66</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Cucumber</td>
+<td>0.25</td>
+<td>-</td>
+<td>0.03</td>
+<td>0.25</td>
+<td>-</td>
+<td>30. Eliza: Ship a level 5 veggie!  </td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring, Summer</td>
+<td>Winter</td>
+<td align="right">5</td>
+<td>5</td>
+<td>Yes</td>
+<td align="right">320</td>
+<td align="right">32</td>
+<td>250</td>
+<td>68</td>
+<td> </td>
+<td align="right">340</td>
+<td align="right">20</td>
+<td align="right">68</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Radish</td>
+<td>0.75</td>
+<td>-</td>
+<td>0.25</td>
+<td>-</td>
+<td>-</td>
+<td>15. Eliza: Harvest Potato!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Fall</td>
+<td>Summer</td>
+<td align="right">5</td>
+<td>1</td>
+<td>-</td>
+<td align="right">120</td>
+<td align="right">12</td>
+<td>1580</td>
+<td>360</td>
+<td> </td>
+<td align="right">360</td>
+<td align="right">240</td>
+<td align="right">72</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Pink Turnip</td>
+<td>2.00</td>
+<td>-</td>
+<td>0.06</td>
+<td>-</td>
+<td>0.25</td>
+<td>21. Eliza: Harvest 20 Turnips!  </td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring</td>
+<td>Winter</td>
+<td align="right">11</td>
+<td>4</td>
+<td>-</td>
+<td align="right">160</td>
+<td align="right">16</td>
+<td>700</td>
+<td>200</td>
+<td> </td>
+<td align="right">800</td>
+<td align="right">640</td>
+<td align="right">73</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Charm Blue</td>
+<td>0.50</td>
+<td>-</td>
+<td>0.03</td>
+<td>0.75</td>
+<td>-</td>
+<td>14. Eliza: Harvest 3 (types of) flowers!</td>
+<td> </td>
+<td>flower</td>
+<td>Fall</td>
+<td>Winter</td>
+<td align="right">8</td>
+<td>3</td>
+<td>-</td>
+<td align="right">370</td>
+<td align="right">37</td>
+<td>800</td>
+<td>220</td>
+<td> </td>
+<td align="right">660</td>
+<td align="right">290</td>
+<td align="right">83</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Yam</td>
+<td>0.25</td>
+<td>-</td>
+<td>0.03</td>
+<td>0.50</td>
+<td>-</td>
+<td>22. Eliza: Harvest 5 Radishes!  </td>
+<td> </td>
+<td>vegetable</td>
+<td>Summer, Fall</td>
+<td>Winter</td>
+<td align="right">8</td>
+<td>5</td>
+<td>-</td>
+<td align="right">250</td>
+<td align="right">25</td>
+<td>450</td>
+<td>140</td>
+<td> </td>
+<td align="right">700</td>
+<td align="right">450</td>
+<td align="right">88</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Cherry Grass</td>
+<td>0.75</td>
+<td>-</td>
+<td>0.03</td>
+<td>-</td>
+<td>1.00</td>
+<td>20. Eliza: Harvest 9 Charm Blues!  </td>
+<td> </td>
+<td>flower</td>
+<td>Spring</td>
+<td>Winter</td>
+<td align="right">10</td>
+<td>4</td>
+<td>-</td>
+<td align="right">420</td>
+<td align="right">42</td>
+<td>700</td>
+<td>230</td>
+<td> </td>
+<td align="right">920</td>
+<td align="right">500</td>
+<td align="right">92</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Pom-Pom Grass</td>
+<td>1.25</td>
+<td>-</td>
+<td>0.03</td>
+<td>1.25</td>
+<td>-</td>
+<td>19. Eliza: Give Amber a Toyherb!</td>
+<td> </td>
+<td>flower</td>
+<td>Fall</td>
+<td>Winter</td>
+<td align="right">14</td>
+<td>3</td>
+<td>-</td>
+<td align="right">510</td>
+<td align="right">51</td>
+<td>1500</td>
+<td>440</td>
+<td> </td>
+<td align="right">1320</td>
+<td align="right">810</td>
+<td align="right">94</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Clover (4-Leaf Clover)</td>
+<td>0.31</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>-</td>
+<td>-</td>
+<td>26. Eliza: Harvest 5 (types of) flowers!</td>
+<td> </td>
+<td>flower</td>
+<td>Spring, Fall</td>
+<td>Summer</td>
+<td align="right">28</td>
+<td>3</td>
+<td>-</td>
+<td align="right">960</td>
+<td align="right">96</td>
+<td>4000</td>
+<td>980</td>
+<td> </td>
+<td align="right">2940</td>
+<td align="right">1980</td>
+<td align="right">105</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Ironleaf</td>
+<td>1.75</td>
+<td>-</td>
+<td>0.03</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>29. Eliza: Till a 4-Leaf Clover!</td>
+<td> </td>
+<td>flower</td>
+<td>Winter</td>
+<td>Summer</td>
+<td align="right">21</td>
+<td>2</td>
+<td>-</td>
+<td align="right">600</td>
+<td align="right">60</td>
+<td>4444</td>
+<td>1111</td>
+<td> </td>
+<td align="right">2222</td>
+<td align="right">1622</td>
+<td align="right">106</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Green Pepper</td>
+<td>0.25</td>
+<td>-</td>
+<td>0.03</td>
+<td>0.50</td>
+<td>-</td>
+<td>31. Eliza: Till Corn!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Summer</td>
+<td>Winter</td>
+<td align="right">7</td>
+<td>5</td>
+<td>Yes</td>
+<td align="right">800</td>
+<td align="right">80</td>
+<td>700</td>
+<td>150</td>
+<td> </td>
+<td align="right">750</td>
+<td align="right">-50</td>
+<td align="right">107</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Eggplant</td>
+<td>0.06</td>
+<td>-</td>
+<td>0.03</td>
+<td>0.75</td>
+<td>-</td>
+<td>63. Eliza: Ship a level 10 veggie!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring, Summer</td>
+<td>Winter</td>
+<td align="right">7</td>
+<td>4</td>
+<td>Yes</td>
+<td align="right">720</td>
+<td align="right">72</td>
+<td>950</td>
+<td>190</td>
+<td> </td>
+<td align="right">760</td>
+<td align="right">40</td>
+<td align="right">109</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Carrot</td>
+<td>1.50</td>
+<td>-</td>
+<td>0.25</td>
+<td>-</td>
+<td>0.25</td>
+<td>27. Eliza: Harvest 6 (types of) veggies!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Fall</td>
+<td>-</td>
+<td align="right">10</td>
+<td>3</td>
+<td>-</td>
+<td align="right">400</td>
+<td align="right">40</td>
+<td>2600</td>
+<td>380</td>
+<td> </td>
+<td align="right">1140</td>
+<td align="right">740</td>
+<td align="right">114</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Lamp Grass</td>
+<td>1.50</td>
+<td>0.75</td>
+<td>0.03</td>
+<td>-</td>
+<td>0.75</td>
+<td>25. Eliza: Harvest Cherry Grass!</td>
+<td> </td>
+<td>flower</td>
+<td>Winter</td>
+<td>-</td>
+<td align="right">16</td>
+<td>3</td>
+<td>-</td>
+<td align="right">740</td>
+<td align="right">74</td>
+<td>2000</td>
+<td>650</td>
+<td> </td>
+<td align="right">1950</td>
+<td align="right">1210</td>
+<td align="right">122</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Corn</td>
+<td>0.25</td>
+<td>-</td>
+<td>0.03</td>
+<td>0.25</td>
+<td>-</td>
+<td>27. Eliza: Harvest 6 (types of) veggies!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring, Summer</td>
+<td>Winter</td>
+<td align="right">7</td>
+<td>1</td>
+<td>-</td>
+<td align="right">450</td>
+<td align="right">45</td>
+<td>3000</td>
+<td>1000</td>
+<td> </td>
+<td align="right">1000</td>
+<td align="right">550</td>
+<td align="right">143</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Hot-Hot (Hot-Hot Fruit)</td>
+<td>2.25</td>
+<td>-</td>
+<td>0.03</td>
+<td>3.00</td>
+<td>-</td>
+<td>63. Eliza: Ship a level 10 veggie!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Winter</td>
+<td>Summer</td>
+<td align="right">31</td>
+<td>5</td>
+<td>-</td>
+<td align="right">1200</td>
+<td align="right">120</td>
+<td>7000</td>
+<td>900</td>
+<td> </td>
+<td align="right">4500</td>
+<td align="right">3300</td>
+<td align="right">145</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Pineapple</td>
+<td>4.00</td>
+<td>-</td>
+<td>0.25</td>
+<td>-</td>
+<td>0.75</td>
+<td>65. Eliza: Harvest a large veggie!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Summer</td>
+<td>Spring, Fall, Winter</td>
+<td align="right">28</td>
+<td>3</td>
+<td>Yes</td>
+<td align="right">2800</td>
+<td align="right">280</td>
+<td>8500</td>
+<td>1600</td>
+<td> </td>
+<td align="right">4800</td>
+<td align="right">2000</td>
+<td align="right">171</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Gold Pumpkin</td>
+<td>3.50</td>
+<td>1.75</td>
+<td>1.75</td>
+<td>2.00</td>
+<td>3.10</td>
+<td>78. Eliza: Gift (pineapple juice) for Margaret!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Winter</td>
+<td>Summer</td>
+<td align="right">70</td>
+<td>3</td>
+<td>Yes</td>
+<td align="right">4500</td>
+<td align="right">450</td>
+<td>20000</td>
+<td>4000</td>
+<td> </td>
+<td align="right">12000</td>
+<td align="right">7500</td>
+<td align="right">171</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Leek</td>
+<td>1.50</td>
+<td>-</td>
+<td>0.25</td>
+<td>-</td>
+<td>-</td>
+<td>32. Eliza: Give Dylas a Carrot! </td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring, Fall</td>
+<td>Summer</td>
+<td align="right">9</td>
+<td>1</td>
+<td>-</td>
+<td align="right">680</td>
+<td align="right">68</td>
+<td>4800</td>
+<td>1600</td>
+<td> </td>
+<td align="right">1600</td>
+<td align="right">920</td>
+<td align="right">178</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Autumn Grass</td>
+<td>2.25</td>
+<td>-</td>
+<td>0.03</td>
+<td>-</td>
+<td>3.00</td>
+<td>56. Eliza: Fight using an Ironleaf!</td>
+<td> </td>
+<td>flower</td>
+<td>Fall</td>
+<td>Winter</td>
+<td align="right">29</td>
+<td>3</td>
+<td>-</td>
+<td align="right">2500</td>
+<td align="right">250</td>
+<td>6000</td>
+<td>1800</td>
+<td> </td>
+<td align="right">5400</td>
+<td align="right">2900</td>
+<td align="right">186</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Onion</td>
+<td>2.50</td>
+<td>-</td>
+<td>0.50</td>
+<td>0.25</td>
+<td>0.50</td>
+<td>59. Eliza: Harvest 12 (types of) veggies!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Fall</td>
+<td>-</td>
+<td align="right">18</td>
+<td>5</td>
+<td>-</td>
+<td align="right">1480</td>
+<td align="right">148</td>
+<td>6700</td>
+<td>800</td>
+<td> </td>
+<td align="right">4000</td>
+<td align="right">2520</td>
+<td align="right">222</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Tomato</td>
+<td>0.13</td>
+<td>0.50</td>
+<td>0.13</td>
+<td>0.50</td>
+<td>-</td>
+<td>64. Eliza: Harvest certain veggies (20 bok choy, 20 cabbage, 20 onion)!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring, Summer</td>
+<td>Winter</td>
+<td align="right">7</td>
+<td>3</td>
+<td>Yes</td>
+<td align="right">1880</td>
+<td align="right">188</td>
+<td>1800</td>
+<td>540</td>
+<td> </td>
+<td align="right">1620</td>
+<td align="right">-260</td>
+<td align="right">231</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Noel Grass</td>
+<td>2.25</td>
+<td>-</td>
+<td>3.00</td>
+<td>-</td>
+<td>-</td>
+<td>58. Eliza: Harvest Autumn Grass!</td>
+<td> </td>
+<td>flower</td>
+<td>Winter</td>
+<td>Summer</td>
+<td align="right">33</td>
+<td>4</td>
+<td>-</td>
+<td align="right">2700</td>
+<td align="right">270</td>
+<td>6660</td>
+<td>2000</td>
+<td> </td>
+<td align="right">8000</td>
+<td align="right">5300</td>
+<td align="right">242</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Gold Melon (Pink Melon)</td>
+<td>0.75</td>
+<td>0.25</td>
+<td>0.25</td>
+<td>-</td>
+<td>0.75</td>
+<td>64. Eliza: Harvest certain veggies (20 bok choy, 20 cabbage, 20 onion)!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring, Summer</td>
+<td>Winter</td>
+<td align="right">7</td>
+<td>2</td>
+<td>Yes</td>
+<td align="right">2120</td>
+<td align="right">212</td>
+<td>5000</td>
+<td>850</td>
+<td> </td>
+<td align="right">1700</td>
+<td align="right">-420</td>
+<td align="right">243</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Cabbage</td>
+<td>0.75</td>
+<td>-</td>
+<td>0.75</td>
+<td>-</td>
+<td>-</td>
+<td>59. Eliza: Harvest 12 (types of) veggies!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Spring, Fall</td>
+<td>-</td>
+<td align="right">8</td>
+<td>3</td>
+<td>-</td>
+<td align="right">980</td>
+<td align="right">98</td>
+<td>2800</td>
+<td>680</td>
+<td> </td>
+<td align="right">2040</td>
+<td align="right">1060</td>
+<td align="right">255</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Fireflower</td>
+<td>2.25</td>
+<td>2.50</td>
+<td>1.00</td>
+<td>-</td>
+<td>-</td>
+<td>57. Eliza: Harvest a large flower!</td>
+<td> </td>
+<td>flower</td>
+<td>Summer</td>
+<td>Winter</td>
+<td align="right">42</td>
+<td>4</td>
+<td>-</td>
+<td align="right">5000</td>
+<td align="right">500</td>
+<td>2800</td>
+<td>2800</td>
+<td> </td>
+<td align="right">11200</td>
+<td align="right">6200</td>
+<td align="right">267</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Bok Choy</td>
+<td>0.50</td>
+<td>0.75</td>
+<td>0.03</td>
+<td>-</td>
+<td>-</td>
+<td>59. Eliza: Harvest 12 (types of) veggies!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Fall</td>
+<td>Summer</td>
+<td align="right">5</td>
+<td>4</td>
+<td>-</td>
+<td align="right">1000</td>
+<td align="right">100</td>
+<td>1900</td>
+<td>420</td>
+<td> </td>
+<td align="right">1680</td>
+<td align="right">680</td>
+<td align="right">336</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Gold Potato</td>
+<td>3.56</td>
+<td>0.75</td>
+<td>1.00</td>
+<td>3.00</td>
+<td>1.25</td>
+<td>68. Eliza: Harvest non-Gold Veggies!</td>
+<td> </td>
+<td>vegetable</td>
+<td>Winter</td>
+<td>Summer</td>
+<td align="right">50</td>
+<td>3</td>
+<td>-</td>
+<td align="right">4000</td>
+<td align="right">400</td>
+<td>30000</td>
+<td>6000</td>
+<td> </td>
+<td align="right">18000</td>
+<td align="right">14000</td>
+<td align="right">360</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Gold Cabbage</td>
+<td>3.12</td>
+<td>1.56</td>
+<td>3.12</td>
+<td>1.50</td>
+<td>1.56</td>
+<td>79. Eliza: Get 25% shipment rate!</td>
+<td>boss drop</td>
+<td>vegetable</td>
+<td>Winter</td>
+<td>Summer</td>
+<td align="right">90</td>
+<td>3</td>
+<td>-</td>
+<td align="right">5000</td>
+<td align="right">500</td>
+<td>50000</td>
+<td>11500</td>
+<td> </td>
+<td align="right">34500</td>
+<td align="right">29500</td>
+<td align="right">383</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Gold Turnip</td>
+<td>3.72</td>
+<td>2.50</td>
+<td>2.50</td>
+<td>2.50</td>
+<td>2.50</td>
+<td>81. Eliza: Give a Turnip Heaven</td>
+<td> </td>
+<td>vegetable</td>
+<td>Winter</td>
+<td>Summer</td>
+<td align="right">90</td>
+<td>3</td>
+<td>-</td>
+<td align="right">10000</td>
+<td align="right">1000</td>
+<td>100000</td>
+<td>20000</td>
+<td> </td>
+<td align="right">60000</td>
+<td align="right">50000</td>
+<td align="right">667</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Green Crystal</td>
+<td>3.12</td>
+<td>0.50</td>
+<td>0.50</td>
+<td>5.64</td>
+<td>0.50</td>
+<td>72. Eliza: Harvest Green Crystal!</td>
+<td> </td>
+<td>flower</td>
+<td>Summer</td>
+<td>Spring, Fall, Winter</td>
+<td align="right">70</td>
+<td>3</td>
+<td>-</td>
+<td align="right">30000</td>
+<td align="right">1000</td>
+<td>48000</td>
+<td>17000</td>
+<td> </td>
+<td align="right">51000</td>
+<td align="right">21000</td>
+<td align="right">729</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Red Crystal</td>
+<td>3.12</td>
+<td>0.75</td>
+<td>5.64</td>
+<td>0.75</td>
+<td>0.75</td>
+<td>73. Eliza: Harvest Red Crystal!</td>
+<td> </td>
+<td>flower</td>
+<td>Fall</td>
+<td>Spring, Summer, Winter</td>
+<td align="right">80</td>
+<td>3</td>
+<td>-</td>
+<td align="right">30000</td>
+<td align="right">1000</td>
+<td>56000</td>
+<td>20000</td>
+<td> </td>
+<td align="right">60000</td>
+<td align="right">30000</td>
+<td align="right">750</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>White Crystal</td>
+<td>3.12</td>
+<td>5.64</td>
+<td>1.25</td>
+<td>1.25</td>
+<td>1.25</td>
+<td>74. Eliza: Harvest White Crystal!</td>
+<td> </td>
+<td>flower</td>
+<td>Winter</td>
+<td>Spring, Summer, Fall</td>
+<td align="right">90</td>
+<td>3</td>
+<td>-</td>
+<td align="right">30000</td>
+<td align="right">1000</td>
+<td>80000</td>
+<td>22500</td>
+<td> </td>
+<td align="right">67500</td>
+<td align="right">37500</td>
+<td align="right">750</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Blue Crystal</td>
+<td>3.00</td>
+<td>0.50</td>
+<td>0.50</td>
+<td>0.50</td>
+<td>3.74</td>
+<td>71. Eliza: Harvest Blue Crystal!</td>
+<td>map</td>
+<td>flower</td>
+<td>Spring</td>
+<td>Summer, Fall, Winter</td>
+<td align="right">55</td>
+<td>3</td>
+<td>-</td>
+<td align="right">30000</td>
+<td align="right">1000</td>
+<td>40000</td>
+<td>15000</td>
+<td> </td>
+<td align="right">45000</td>
+<td align="right">15000</td>
+<td align="right">818</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Emery Flower</td>
+<td>6.24</td>
+<td>3.75</td>
+<td>3.75</td>
+<td>3.75</td>
+<td>3.75</td>
+<td>82. Eliza: Harvest almost all crops (except emery)!</td>
+<td> </td>
+<td>flower</td>
+<td>-</td>
+<td>-</td>
+<td align="right">120</td>
+<td>2</td>
+<td>-</td>
+<td align="right">50000</td>
+<td align="right">2500</td>
+<td>500000</td>
+<td>55000</td>
+<td> </td>
+<td align="right">110000</td>
+<td align="right">60000</td>
+<td align="right">917</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Shining Tree</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>67. Eliza: Cut down a Shining Tree!</td>
+<td> </td>
+<td>tree</td>
+<td>-</td>
+<td>Winter</td>
+<td align="right">38</td>
+<td>∞ IF hp &gt; 0</td>
+<td>-</td>
+<td align="right">3000</td>
+<td align="right">300</td>
+<td>-</td>
+<td>-</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td>Dungeon</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>62. Eliza: Complete field dungeon!</td>
+<td> </td>
+<td>flower - special</td>
+<td>-</td>
+<td>-</td>
+<td align="right">18</td>
+<td>-</td>
+<td>-</td>
+<td align="right">5000</td>
+<td align="right">500</td>
+<td>-</td>
+<td>-</td>
+<td> </td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody></table>
+
+</body>
+</html>

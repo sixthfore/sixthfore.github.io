@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Sixthfore</title>
     <base target="_top">
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> --!>
     <meta charset="utf-8">
 
     <style>
@@ -20,24 +21,14 @@
 
   <body>
     <script src="https://d3js.org/d3.v4.0.0-alpha.50.min.js"></script>
+    <script>
+      d3.csv("crops.csv")
+        .row(function(d) { return {key: d.key, value: +d.value}; })
+        .get(function(error, rows) { console.log(rows); });
+    </script>
 
-    <script type="text/javascript"charset="utf-8">
-      d3.text("crops.csv", function(data) {
-        var parsedCSV = d3.csv.parseRows(data);
-        var container = d3.select("body")
-          .append("table")
-          .selectAll("tr")
-              .data(parsedCSV).enter()
-              .append("tr")
-          .selectAll("td")
-              .data(function(d) { return d; }).enter()
-              .append("td")
-              .text(function(d) { return d; });
-        });
-      </script>
-
-    <!-- <script
-      src="https://script.google.com/macros/s/AKfycbyyd4IB208n-m2WzkaPpcZm80uYSydQoA6C2sVj_HIN-GB-8Zo/exec?prefix=cropsLoaded"></script>
-    --!>
-  </body>
+<!-- <script
+src="https://script.google.com/macros/s/AKfycbyyd4IB208n-m2WzkaPpcZm80uYSydQoA6C2sVj_HIN-GB-8Zo/exec?prefix=cropsLoaded"></script>
+--!>
+</body>
 </html>
