@@ -1,0 +1,48 @@
+table {                                                                                                                                             
+  border-collapse: collapse;                                                                                                                        
+  border: 2px black solid;                                                                                                                          
+  font: 12px sans-serif;                                                                                                                            
+}                                                                                                                                                   
+td {                                                                                                                                                
+  border: 1px black solid;                                                                                                                          
+  padding: 5px;                                                                                                                                     
+}                                                                                                                                                   
+
+
+
+.tabbg {
+  background-color: #dadada;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+.tabbgselected {
+  background-color: #efefef;
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #000000;
+}
+
+#pro_tabs td, #pro_sidebar td {
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+#pro_tabs td {
+  width: 25%;
+  cursor: pointer;
+}
+
+#pro_content {
+  font-size: 10pt;
+  text-align: left;
+  padding: 10px;
+}
+
+#pro_threads {
+  font-size: 10pt;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-align: left;
+}
+

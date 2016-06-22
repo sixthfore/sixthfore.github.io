@@ -9,37 +9,26 @@
  */
 
 var DTT = {
-
-  selected:
-  {
+  selected: {
     id: "welcome",
     listItem: {}
   },
-
-  $: function(id)
-  {
+  $: function(id) {
     if(id)
       return document.getElementById(id);
     return false;
   },
-
-  init: function()
-  {
+  init: function() {
     var tCookie = this.getCookie();
-
-    if(tCookie.tab)
-    {
+    if(tCookie.tab) {
       this.toggleTab(tCookie.tab);
     }
-
-    if(tCookie.show == "0")
-    {
+    if(tCookie.show == "0") {
       this.$("pro_collapse").style.display = "none";
     }
   },
 
-  setCookie: function(tab, show)
-  {
+  setCookie: function(tab, show) {
     var tTab = "";
     var tShow = "";
     var tCookie = this.getCookie();
@@ -57,10 +46,8 @@ var DTT = {
     document.cookie = "DTTData=tab=" + encodeURI(tTab) + "|show=" + encodeURI(tShow) + ";expires=Sat, 20 Jan 3000 12:12:12 UTC; path=/;";
   },
 
-  getCookie: function()
-  {
-    if(document.cookie.match(new RegExp("DTTData=(.+?)($|;)","gi")))
-    {
+  getCookie: function() {
+    if(document.cookie.match(new RegExp("DTTData=(.+?)($|;)","gi"))) {
       var data = decodeURI(RegExp.$1);
 
       return {
@@ -72,14 +59,11 @@ var DTT = {
     return false;
   },
 
-  toggleTab: function(id)
-  {
+  toggleTab: function(id) {
     var newID = id.substr(4);
 
-    if(this.selected.id != newID && this.$(id))
-    {
-      if(this.$("nav_" + this.selected.id))
-      {
+    if(this.selected.id != newID && this.$(id)) {
+      if(this.$("nav_" + this.selected.id)) {
         this.$("nav_" + this.selected.id).className = "tabbg";
         this.$("pro_" + this.selected.id).style.display = "none";
       }
@@ -92,33 +76,25 @@ var DTT = {
     }
   },
 
-  toggleTable: function()
-  {
-    if(this.$("pro_collapse").style.display == "")
-    {
+  toggleTable: function() {
+    if(this.$("pro_collapse").style.display == "") {
       this.$("pro_collapse").style.display = "none";
       this.setCookie(false, "0");
     }
-    else
-    {
+    else {
       this.$("pro_collapse").style.display = "";
       this.setCookie(false, "1");
     }
   },
 
-  toggleListItem: function(id, name)
-  {
-    if(this.selected.listItem[id])
-    {
-      if(this.selected.listItem[id].name == name)
-      {
-        if(this.selected.listItem[id].object.style.display == "")
-        {
+  toggleListItem: function(id, name) {
+    if(this.selected.listItem[id]) {
+      if(this.selected.listItem[id].name == name) {
+        if(this.selected.listItem[id].object.style.display == "") {
           this.selected.listItem[id].object.style.display = "none";
           this.$("pro_" + id + "_default").style.display = "";
         }
-        else
-        {
+        else {
           this.$("pro_" + id + "_default").style.display = "none";
           this.selected.listItem[id].object.style.display = "";
         }
@@ -141,47 +117,7 @@ var DTT = {
 //-->
 </script>
 
-<style type="text/css">
-<!--
-
-.tabbg {
-  background-color: #dadada;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
-}
-
-.tabbgselected {
-  background-color: #efefef;
-  border-bottom: 1px solid #efefef;
-  border-right: 1px solid #000000;
-}
-
-#pro_tabs td, #pro_sidebar td {
-  font-size: 10pt;
-  font-weight: bold;
-  text-align: center;
-}
-
-#pro_tabs td {
-  width: 25%;
-  cursor: pointer;
-}
-
-#pro_content {
-  font-size: 10pt;
-  text-align: left;
-  padding: 10px;
-}
-
-#pro_threads {
-  font-size: 10pt;
-  font-weight: bold;
-  line-height: 1.5em;
-  text-align: left;
-}
-
--->
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <table width="92%" align="center" cellspacing="1" cellpadding="0" class="bordercolor">
   <tr>
