@@ -1,3 +1,6 @@
+
+<script src="https://d3js.org/d3.v4.0.0-alpha.50.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script type="text/javascript">
 <!--
 
@@ -150,26 +153,12 @@ var DTT = {
             
             <!-- FIRST TAB --!>
             <div id="pro_welcome">
+              Search: <input id="search" type="text">
 
-              <script src="https://d3js.org/d3.v4.0.0-alpha.50.min.js"></script>
-              <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-              <script type="text/javascript"charset="utf-8">
-                d3.text("crops.csv", function(data) {
-                  var parsedCSV = d3.csv.parseRows(data);
-                  var container = d3.select("body")
-                    .append("table")
-                    .selectAll("tr")
-                        .data(parsedCSV).enter()
-                        .append("tr")
-                    .selectAll("td")
-                        .data(function(d) { return d; }).enter()
-                        .append("td")
-                        .text(function(d) { return d; });
-                  });
-              </script>
-             
               <p><a href="/index.cgi?action=register">Make an account</a>.
               Maintain a saved checklist.</p>
+
+              <div id="theTableThing"></div>
             </div>
 
             <!-- SECOND TAB --!>
@@ -251,3 +240,35 @@ DTT.init();
 //-->
 </script>
 
+<script type="text/javascript"charset="utf-8">
+d3.text("crops.csv", function(data) {
+    var parsedCSV = d3.csv.parseRows(data);
+    var search = document.getElementById('search')
+
+    search.addEventListener('input', function() {
+      displayFilteredColumns(search.value);
+    });
+
+    var displayFilteredColumns = function(query) {
+    query = query || '';
+      var filteredCSV = parsedCSV.map(function(row) {
+        return row.filter(function(col, idx) {
+          return parsedCSV[0][idx].indexOf(query) >= 0 || idx == 0;
+        });
+      });
+
+      document.getElementById("theTableThing").innerHTML =  '';
+      var container = d3.select("#theTableThing")
+        .append("table")
+        .selectAll("tr")
+            .data(filteredCSV).enter()
+            .append("tr")
+        .selectAll("td")
+            .data(function(d) { return d; }).enter()
+            .append("td")
+            .text(function(d) { return d; });
+    };
+    displayFilteredColumns();
+
+    });
+</script>
